@@ -7,13 +7,12 @@ package com.yegor;
 public class BubbleSort {
 
     /**
-     * This method returns array of int which sorted with bubble sort.
+     * This method sorts array of int which sorted with bubble sort.
      * @param intArray the array to be sorted
      * @param descending if true then array to be sorted in descending order,
      *                   if false then array to be sorted in ascending order
-     * @return sorted array of int
      */
-    public int[] bubbleSort(int[] intArray, boolean descending) {
+    public void bubbleSort(int[] intArray, boolean descending) {
 
         int loop = intArray.length; // loop - number of unsorted elements
         while (loop > 0){
@@ -36,7 +35,6 @@ public class BubbleSort {
             }
             loop--;
         }
-        return intArray;
     }
 
     private boolean defineDirectionOfSort(int sortedElement, int element, boolean descending) {

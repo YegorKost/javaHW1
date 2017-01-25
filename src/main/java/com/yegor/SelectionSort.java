@@ -7,13 +7,12 @@ package com.yegor;
 public class SelectionSort {
 
     /**
-     * This method returns array of int which sorted with selection sort.
+     * This method sorts array of int which sorted with selection sort.
      * @param intArray the array to be sorted
      * @param descending if true then array to be sorted in descending order,
      *                   if false then array to be sorted in ascending order
-     * @return sorted array of int
      */
-    public int[] selectionSort(int[] intArray, boolean descending) {
+    public void selectionSort(int[] intArray, boolean descending) {
 
         for (int i = 0; i < intArray.length; i++){ // i - index of inserted element
 
@@ -36,8 +35,6 @@ public class SelectionSort {
 
 
         }
-
-        return intArray;
     }
 
     private boolean defineDirectionOfSort (int selectedPosition, int select, boolean descending) {

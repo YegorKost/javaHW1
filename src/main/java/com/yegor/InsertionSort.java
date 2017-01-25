@@ -7,13 +7,12 @@ package com.yegor;
 public class InsertionSort {
 
     /**
-     * This method returns array of int which sorted with insertion sort.
+     * This method sorts array of int which sorted with insertion sort.
      * @param intArray the array to be sorted
      * @param descending if true then array to be sorted in descending order,
      *                   if false then array to be sorted in ascending order
-     * @return sorted array of int
      */
-    public int[] insertionSort(int[] intArray, boolean descending) {
+    public void insertionSort(int[] intArray, boolean descending) {
 
         for (int i = 1; i < intArray.length; i++){ // i - index of inserted element
 
@@ -32,7 +31,6 @@ public class InsertionSort {
             }
 
         }
-        return intArray;
     }
 
     private boolean defineDirectionOfSort(int insertedElement, int elementOfSortedArray, boolean descending) {

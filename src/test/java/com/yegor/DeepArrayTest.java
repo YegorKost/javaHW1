@@ -1,10 +1,8 @@
 package com.yegor;
 
 import org.junit.Test;
-
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
 
 /**
  * Created by YegorKost on 23.01.2017.
